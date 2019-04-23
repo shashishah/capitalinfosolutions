@@ -15,7 +15,7 @@ class Capitalinfo_model extends CI_Model
       {
         
         return 0;  
-      }
+      } 
       else
       {
         $this->db->insert('registered_students',$data);
@@ -1267,6 +1267,8 @@ $result = $this->db->select('*')->from('user')->where(array('status' =>'Active')
            return true;
           
          } 
+	
+	/* user file */
          
                function filename_exists($username)
 {
